@@ -9,7 +9,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@palmares/databases": "^0.2.2",
+    "@palmares/databases": "^0.2.3",
     "@palmares/drizzle-engine": "^0.2.2",
     "@palmares/node-std": "^0.2.0",
     "@palmares/sequelize-engine": "^0.2.2",
