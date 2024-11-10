@@ -8,6 +8,10 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
+  "scripts": {
+    "migration:make": "tsx makemigrations",
+    "migration:run": "tsx migrate"
+  },
   "dependencies": {
     "@palmares/databases": "^0.2.3",
     "@palmares/drizzle-engine": "^0.2.2",
