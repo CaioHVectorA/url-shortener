@@ -6,17 +6,17 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.6.3"
   },
   "scripts": {
     "migration:make": "tsx makemigrations",
     "migration:run": "tsx migrate"
   },
   "dependencies": {
-    "@palmares/databases": "^0.2.3",
-    "@palmares/drizzle-engine": "^0.2.2",
-    "@palmares/node-std": "^0.2.0",
-    "@palmares/sequelize-engine": "^0.2.2",
+    "@palmares/databases": "^0.2.4",
+    "@palmares/drizzle-engine": "^0.2.4",
+    "@palmares/node-std": "^0.2.1",
+    "@palmares/sequelize-engine": "^0.2.4",
     "@sequelize/sqlite3": "^7.0.0-alpha.43",
     "@types/better-sqlite3": "^7.6.11",
     "better-sqlite3": "^11.5.0"

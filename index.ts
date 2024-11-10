@@ -1,5 +1,5 @@
+import './database.config';
 import { Company, User } from './models';
-
 await Company.default.set((qs) =>
   qs
     .join(User, 'usersOfCompany', (qs) =>
