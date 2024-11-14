@@ -1,1 +1,1 @@
-export { default as M001_default_auto_migration_1731247811489 } from "./001_default_auto_migration_1731247811489";
+export { default as M002_default_auto_migration_1731545922607 } from "./002_default_auto_migration_1731545922607";
