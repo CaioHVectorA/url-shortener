@@ -1,7 +1,7 @@
-import '../database.config';
-import { User, ShorterLink, Analytics } from './models';
-import * as d from '../.drizzle/schema'
-import { db } from 'database.config'
+import "../database.config";
+import { User, ShorterLink, Analytics } from "./models";
+import * as d from "../_.drizzle_/schema";
+import { db } from "database.config";
 /**
  * YOU CAN STILL USE DRIZZLE!
  *
@@ -33,26 +33,25 @@ import { db } from 'database.config'
   //       isActive: true
   //     })
   // );
-  await db.delete(d.Shorter)
-  await db.delete(d.User)
-  await User.default.set((qs) => 
-    qs.join(ShorterLink, 'shorterLinks', (qs) => 
-      qs.data(
-        {
+  await db.delete(d.Shorter);
+  await db.delete(d.User);
+  await User.default.set((qs) =>
+    qs
+      .join(ShorterLink, "shorterLinks", (qs) =>
+        qs.data({
           short: "Teste",
           long: "TesteLong",
-          isActive: true
-        }
+          isActive: true,
+        })
       )
-    )
-    .data({
-      firstName: 'Caio',
-      lastName: "Henrique",
-      email: "cg@gm.co",
-      isActive: true
-    })
-  )
-  console.log(await db.select().from(d.User))
+      .data({
+        firstName: "Caio",
+        lastName: "Henrique",
+        email: "cg@gm.co",
+        isActive: true,
+      })
+  );
+  console.log(await db.select().from(d.User));
   /**
    * YOU CAN STILL USE DRIZZLE!
    *
