@@ -19,18 +19,20 @@
     "@palmares/databases": "0.2.14",
     "@palmares/drizzle-engine": "^0.2.14",
     "@palmares/node-std": "^0.2.6",
-    "better-sqlite3": "^11.8.1"
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.3"
   },
   "devDependencies": {
-    "@types/node": "^22.13.5",
-    "@types/better-sqlite3": "^7.6.12",
-    "drizzle-kit": "^0.28.1",
     "@eslint/js": "^10.0.0",
-    "globals": "^15.15.0",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.13.5",
+    "drizzle-kit": "^0.28.1",
     "eslint": "^9.21.0",
+    "globals": "^15.15.0",
     "tsup": "^8.3.6",
+    "tsx": "^4.19.3",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.24.1",
-    "tsx": "^4.19.3"
+    "typescript-eslint": "^8.24.1"
   }
 }

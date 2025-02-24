@@ -20,17 +20,17 @@ import { eq } from "@palmares/drizzle-engine/drizzle";
         qs.data({
           short: "Teste",
           long: "TesteLong",
-          isActive: 1,
+          isActive: true,
         })
       )
       .data({
         firstName: "Caio",
         lastName: "Henrique",
         email: "cg@gm.co",
-        isActive: 1,
+        isActive: true,
       })
   );
-  const user = db.select().from(d.User).get();
+  const user = await db.select().from(d.User);
   console.log({ user });
 
   await db
@@ -41,7 +41,7 @@ import { eq } from "@palmares/drizzle-engine/drizzle";
     userId: user!.id,
     short: "Teste2",
     long: "TesteLong2",
-    isActive: 1,
+    isActive: true,
   });
   const userEdited = await User.default.get((qs) => {
     return qs.join(ShorterLink, "shorterLinks");
